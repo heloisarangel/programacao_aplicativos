@@ -1,0 +1,53 @@
+/* Padronizacao para carregamento igual nos navegadores */
+*{
+    margin: 0;
+    padding: 0; 
+    outline: 0;
+}
+
+div{
+    width: 300px;
+     margin: auto; 
+    background-color: yellow;
+}
+
+.azul{
+    background-color: aqua;
+}
+
+.rosa{
+    background-color: rgb(233, 14, 185);
+}
+
+.verde{
+    background-color: rgb(37, 199, 15);
+}
+.container{
+ width: 100%;
+}
+
+.estado{
+    width: 33.333%;
+    float: left;
+}
+
+.divinline{
+    width: 32%;
+    display: inline-block;
+}
+
+.containerflex{
+display: flex;
+
+}
+
+.estadoflex{
+width: 33%;
+}
+
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+}
+
