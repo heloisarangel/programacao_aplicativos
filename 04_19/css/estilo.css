@@ -1,0 +1,88 @@
+/*Padronozação carregamento */
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body {
+    background-color: rgb(171, 199, 236);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+#azul {
+    color: #0CC1C8;
+}
+
+#navegacao {
+    background-color: rgb(58, 130, 179);
+    border-bottom: 1px solid #2d7adf;
+    height: 45px;
+
+    /* Configurando Cabeçalho*/
+}
+
+#area_menu {
+    width: 720px;
+    margin: 0 auto;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    float: right;
+    padding: 10px 0;
+}
+
+/* Formatando os links do menu*/
+#menu a:visited {
+    color: rgb(3, 3, 3);
+}
+
+#menu a:link {
+    color: rgb(12, 20, 20);
+}
+
+#menu a {
+    text-decoration: nome;
+    padding: 5px;
+}
+
+#menu a:hover {
+    color: #213b5e;
+    background-color: #91c3ec;
+}
+/*Area de postagem*/
+#area-principal{
+    width: 720px;
+    margin: 55px auto 10px;
+}
+
+#postagem{
+    background-color: white;
+    padding: 10px;
+}
+h2{
+    color: rgb(8, 8, 19);
+}
+/*Subtitulo*/
+.data_postagem{
+    font-size: 14px;
+    border-bottom: 1px solid #101214;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+    display: block;
+}
+.img-postagem{
+    max-width: 100%;
+    border-radius: 25px;
+}
+.Postado{
+  border-top: 3px solid #121313;
+  padding-left: 10px;
+  display: block;
+  margin-top: 10px;
+}
