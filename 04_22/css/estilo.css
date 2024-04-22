@@ -1,0 +1,78 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.redondo {
+    background-color: rgb(255, 100, 225);
+    width: 300px;
+    height: 300px;
+    /* Arredondando div*/
+    border-radius: 100px 80px;
+    /* Criando espaçamento interno*/
+    padding: 50px;
+}
+
+.redondo h1 {
+    background-color: rgb(100, 255, 255);
+}
+
+.quadrado {
+    /*background-color: rgb(255,255, 100);*/
+    background-image: url("../img/java.jfif");
+    background-size: contain;
+    /*background-repeat: no-repeat;*/
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+}
+
+.quadrado p {
+    background-color: rgba(100, 255, 255);
+}
+
+.quadrado h1 {
+    color: rgba(150, 255, 255);
+    background-color: rgba(0, 100, 50, 0.6);
+}
+
+.gradiente {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(rgb(255, 255, 0), rgb(255, 0, 0), rgb(255, 100, 0));
+    padding: 10px;
+}
+
+.gradiente h1 {
+    color: black;
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.amarelo {
+    background-color: rgb(255, 255, 0);
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    transition: width 2s, transform 2s;
+}
+
+#rotacao {
+    margin-left: 100px;
+}
+
+#rotacao:hover {
+    width: 400px;
+    transform: rotate(20deg);
+}
+
+.noticias {
+    background-color: rgb(128, 128, 128);
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+    transition: height 2s;
+    border: 2px solid red;
+}
+
+.noticias:hover {
+    height: 200px;
+}
