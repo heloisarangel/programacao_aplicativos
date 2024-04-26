@@ -1,0 +1,72 @@
+.exemplo_background{
+    /*Endereco da imagem*/
+    background-image: url("../img/coracao.png");
+    /*Colocando imagem para repetir horizintalmente*/
+    /*background-repeat: repeat-x;*/
+     /*Colocando imagem para repetir verticalmente*/
+     /*background-repeat: repeat-x;*/
+     /*colocando a imagem apenas uma vez*/
+     background-repeat: no-repeat;
+     /*Colocando posicao*/
+     background-position: center top;
+      /*Tornando o background fixo*/
+     /*background-attachment: fixed;*/
+     /*background-attachment: scroll;*/
+     /*background pode receber todos os parametros*/
+     background: rgb(145,145,145) url("../img/coracao.png") no-repeat center top fixed;
+}
+
+.pontilhado{
+    border-style: dotted;
+}
+.tracejado{
+    border-style: dashed;
+}
+.borda_maior{
+    border-style: solid;
+
+}
+.borda_topo{
+    border-top: 2px solid rgb(144, 200, 50);
+}
+.principal{
+    background-color: rgb(144, 150, 80);
+    height: 800px;
+}
+.conteudo{
+    background-color: pink;
+    /*colocando margem em um lado*/
+    margin-left: 80px;
+    /*margin: 80px 20px ;*/
+    /*criando margem nos quatros cantos*/
+    /*margin: 20px 40px 60px 80px;*/
+    height: 600px;
+    width: 400px;
+    padding-top: 50px;
+    padding: 80px 20px;
+    padding: 20px 40px 60px 80px;
+}
+.conteudo_dropdown{
+    display: none;
+    background-color: gray;
+    width: 100px;
+    color: antiquewhite;
+  
+}
+
+.conteudo_dropdown li{
+    border-bottom: 1px solid white;
+    list-style-type: none;
+    padding: 5px 2px;
+}
+.conteudo_dropdown li:hover{
+    background-color: rgb(80, 80, 80);
+}
+.conteudo_dropdown ul{
+    padding: 0;
+}
+
+.dropdown:hover .conteudo_dropdown{
+    display: block;
+}
+
