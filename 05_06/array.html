@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        //Array em javascript e um conjunto de valores armazenados podendo ou nãoser do mesmo tipo
+        let cores = Array("Amarelo","Azul","Vermelho","Violeta",8.8, {tamanho:8.8,peso:90.4})
+        //Para acessar uma posição e necessario colocar entre colchentes o numero da posição
+        //Arrays começam sempre na posicao padrão
+        cores[0] = "Verde"
+        document.write(cores[0])
+        console.log(cores)
+        console.log(cores.length)//Acessando o tamanho do Array lenght
+
+        cores.push("Magenta")//Acrescenta ao final do Array um elemento
+        console.log(cores)
+        cores.pop() //Remove o ultimo elemento do Array
+        console.log(cores)
+        cores.unshift("Ciano") //Acrescenta no inicio do Array
+        console.log(cores)
+        cores.shift() //Remove o primeiro elemento
+        console.log(cores)
+
+        let num = 0
+        document.write("<ul>")
+            //While estrutura de repetição que e delinitada por uma condição verdadeiro ou falso
+        while (num < cores.length){
+            document.write("<li>"+cores[num]+"</li>")
+            num++
+        }
+        document.write("</ul>")
+
+        let frutas = ["Maca", "Jaca", "Pessego", "Uva"]
+        console.log(frutas)
+        for(let i = 0; i< frutas.length;i++){
+            document.write("<li>"+frutas[i]+"</li>")
+        }
+        document.write("</ol>")
+
+        let html = "<div>"
+            html  += "<h1>Ola Pessoas</h1>"
+            html += "</div>"
+            document.write(html)
+            console.log(html)
+
+            let tabela = "<tr><th>Nome</th><th>Idade</th></tr>"
+
+            let pessoas = [
+                ["Josue",18],
+                ["Carlos",22]
+            ]
+            tabela +="<tr><td>"+pessoas[0][0]+"</td><td>"+pessoas[0][1]+"</td></tr>"
+    </script>
+</head>
+<body>
+    <table id="pessoas">
+
+
+    </table>
+
+    <script>
+        //getelementyById encontra o elemento com id especifico
+        // innerHTML acrescenta ao elemento o script gerado 
+         document.getElementById("pessoas").innerHTML = tabela
+    </script>
+</body>
+</html>
