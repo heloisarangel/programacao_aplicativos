@@ -1,0 +1,33 @@
+#alerta{
+ background-color: red;
+ color: white;
+ font-size: 20px;
+ border-radius: 15px;
+}
+
+.ceulimpo{
+    background-color: rgb(120, 146,193);
+    font-size: 20px;
+}
+.nublado{
+    background-color: rgb(15, 15,67);
+    color: white;
+}
+#cores{
+    height: 300px;
+    width: 200px;
+}
+
+.verde{
+    background-color: green;
+}
+.vermelho{
+    background-color: red;
+}
+
+.azul{
+    background-color: blue;
+}
+#listaCarros, th, td{
+   border: 1px solid black;
+}
