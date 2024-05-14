@@ -26,8 +26,25 @@
 }
 
 .azul{
-    background-color: blue;
+    background-color: rgb(92, 92, 226);
 }
 #listaCarros, th, td{
    border: 1px solid black;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(139, 150, 241);
+}
+
+#titulo{
+    text-align: center;
+}
+tr th{
+    background-color: rgb(75, 72, 235);
+}
+
+button{
+    background-color: rgb(161, 64, 226);
+    color: white;
 }
