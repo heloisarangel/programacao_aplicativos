@@ -30,3 +30,4 @@ function removendoClasse(){
   texto.classList.remove("vermelho")
 }
 
+
