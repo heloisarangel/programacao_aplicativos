@@ -3,18 +3,43 @@ import ParafusoModel from "../Models/ParafusoModel.js";
 
  class ParafusoController{
     constructor(){
-        this.parafusos =[
-            {nome:"sextavado"},
-            {nome:"frances"},
-            {nome:"máquina"},
-        ];
     }
+
     create(req, res){
         const nome = req.body.nome;
-        ParafusoModel.create(nome);
-        res.status(201).json("Parafuso Criado");  
+        ParafusoModel.create(nome).then(
+
+      resposta => {
+        console.debug("Inserindo um Parafuso");
+        res.status(resposta[0]).json(resposta[1])
+      }
+
+
+        ).catch(
+            resposta => {
+                console.debug("Erro: Inserindo um Parafuso");
+                res.status(resposta[0]).json(resposta[1])
+              }
+        )
+ 
     }
     read(req,res){
+        ParafusoModel.read(nome).then(
+
+            resposta => {
+              console.debug("Mostrando  Parafuso");
+              res.status(resposta[0]).json(resposta[1])
+            }
+      
+      
+              ).catch(
+                  resposta => {
+                      console.debug("Erro: Mostrando um Parafuso");
+                      res.status(resposta[0]).json(resposta[1])
+                    }
+              )
+       
+          
         res.status(200).json(ParafusoModel.read()); 
     }
     update(req, res){
