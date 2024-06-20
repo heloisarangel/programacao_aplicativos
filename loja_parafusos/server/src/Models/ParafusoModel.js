@@ -50,14 +50,25 @@ class ParafusoModel {
         });
 
     }
-    delete(index) {
-        let sql = `DELETE parafusos SET nome="${nome}" WHERE id_parafuso="${id_parafuso}"`
+    delete(id_parafuso, nome) {
+        let sql = `DELETE from parafusos WHERE id_parafuso="${id_parafuso}"`
 
         
-        this.parafusos.splice(index, 1);
+        return new Promise((resolve, reject) => {
+            this.conexao.query(sql, (erro, retorno) => {
+                if (erro) {
+                    reject([400, erro])
+                } else if (retorno.affectedRows > 0) {
+                    resolve([200, retorno])
+                } else {
+                    resolve([404, "Parafuso apagado"])
+                }
 
+            })
+        });
 
     }
-}
+    
 
+    }
 export default new ParafusoModel();
