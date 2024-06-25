@@ -55,3 +55,29 @@ npx nodemon src/App.js
 
 cd 04_05 
 cd server
+
+
+
+CREATE DATABASE loja_doces;
+
+USE loja_doces;
+
+CREATE TABLE doces(
+id_doce int primary key AUTO_INCREMENT,
+nome_doce VARCHAR (45),
+nome_categoria VARCHAR (10)
+);
+
+INSERT INTO doces (nome) values
+(" bolo"),
+("doces tradicionais")
+;
+
+select*from doces;
+
+UPDATE doce set nome = "bolo" WHERE id_doce=1;
+
+-- drop database loja_doces;
+
+
+delete from categoria where id_categoria=2;
