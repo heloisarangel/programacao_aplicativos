@@ -57,7 +57,7 @@ cd 04_05
 cd server
 
 
-
+// dia 
 CREATE DATABASE loja_doces;
 
 USE loja_doces;
@@ -81,3 +81,21 @@ UPDATE doce set nome = "bolo" WHERE id_doce=1;
 
 
 delete from categoria where id_categoria=2;
+
+
+// instalacoes
+
+node -v
+
+npm install express
+
+npm install nodemon
+
+npm install mysql2
+
+dps que subir o node_modules
+
+criar .gitignore escrever dentro do arquivo /node_modules
+
+
+
